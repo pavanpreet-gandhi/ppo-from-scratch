@@ -4,6 +4,14 @@ from torch.nn import functional as F
 from torch.distributions import MultivariateNormal
 from network import FeedForwardNN
 
+# TODO: Potential extensions and improvements include:
+# - Learning rate annealing
+# - Mini-batch updating of the actor and critic
+# - Adaptive exploration and entropy regularization
+# - Gradient clipping
+# - Early stopping with approximate KL divergence between the old and new policies
+# - Generalized advantage estimation (GAE) for estimating advantages (similar to TD(lambda))
+
 class PPO:
     
     def __init__(self, env):
