@@ -14,7 +14,7 @@ class FeedForwardNN(nn.Module):
     def forward(self, x):
         """
         x: the current observation
-        returns: logits for the action distribution (actor) or value function (critic)
+        returns: mean action (actor) or value function (critic)
         """
         if isinstance(x, np.ndarray):
             x = torch.from_numpy(x).float()
