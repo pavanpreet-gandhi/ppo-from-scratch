@@ -5,6 +5,14 @@ torch
 ipython
 ipykernel
 ipywidgets
+python-dotenv
+Pillow # for VLM example
+tensorboard
 transformers
 datasets
 evaluate
+trl
+bitsandbytes
+peft
+accelerate
+flash-attn --no-build-isolation
